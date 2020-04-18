@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: nodeexample.com
+    labels:
+        app: helloworld
+spec:
+    containers:
+        - name: k8s-demo
+          image: wallyx/node-application
+          ports:
+            - containerPort: 3000
